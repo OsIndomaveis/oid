@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Rolagem suave para âncoras
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href");
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const logoFixed = document.createElement("img");
+    logoFixed.src = "img/LogoOIDsem.png";
+    logoFixed.id = "logoFixed";
+    logoFixed.style.position = "fixed";
+    logoFixed.style.bottom = "20px";
+    logoFixed.style.right = "20px";
+    logoFixed.style.width = "100px";
+    logoFixed.style.zIndex = "1000";
+    logoFixed.style.transition = "opacity 0.5s ease, transform 0.3s ease";
+    logoFixed.style.opacity = "0";
+    document.body.appendChild(logoFixed);
+
+    const logoInicial = document.getElementById("LogoInicial");
+    const claSection = document.getElementById("Cla");
+
+    window.addEventListener("scroll", () => {
+        const logoBottom = logoInicial.getBoundingClientRect().bottom;
+        const claTop = claSection.getBoundingClientRect().top;
+
+        if (logoBottom <= 0 && claTop <= window.innerHeight) {
+            logoFixed.style.opacity = "1";
+        } else {
+            logoFixed.style.opacity = "0";
+        }
+    });
+
+    // Função para fazer a logo pulsar a cada 5 segundos
+    setInterval(() => {
+        if (logoFixed.style.opacity === "1") { // Só pulsa se a logo estiver visível
+            logoFixed.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                logoFixed.style.transform = "scale(1)";
+            }, 500);
+        }
+    }, 5000);
+});
+
+
+
+    
+    </script>
+    
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Início Icone da Página-->
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/site.webmanifest">
+    <!--Fim Icone da Página-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Indomáveis - OID</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div role="banner">
+                <a href="#Cla">CLÃ</a>
+                <a href="#Staff">STAFF</a>
+                <a href="#Historia">HISTÓRIA</a>
+                <a href="#Anuncios">ANÚNCIOS</a>
+                <a href="#Links">LINKS</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="LogoInicial" role="img">
+                <img class="logoInicio" src="img/LogoOIDsem.png">
+            </div>
+            <div class="OsIndomaveis">
+                <div>
+                    <h1 id="Cla">Os Indomáveis</h1>
+                    <p>Nos campos de batalha, onde só os fortes sobrevivem, Os Indomáveis se erguem como lendas. Não tememos o desafio, não recuamos diante do perigo. Nossa força está na união, nossa marca é a resistência. Se nos enfrentam, sentem o peso da nossa fúria. Somos OID, somos imparáveis!</p>
+                </div>
+
+                <div role="img" class="conteiner">
+                    <div class="item">
+                        <img src="img/OID1.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/OID2.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/OID5.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/OID4.png">
+                    </div>
+                </div>
+        </section>
+        <br>
+        <hr>
+        <section>
+                <h2 id="Staff">STAFF OID</h2>
+                <div class="contstaff">
+                    <figure>
+                        <div class="itemstaff">
+                            <a href="staffoid/kaka.html"><img src="img/[OID]Kaka.png"></a>
+                        </div>
+                        <figcaption>Fundador [OID]Kaka</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="itemstaff">
+                            <a href="staffoid/Nxthxn308.html"><img src="img/[OID]Nxthxn308.png"></a>
+                        </div>
+                        <figcaption>Dono Geral [OID]Nxthxn308</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="itemstaff">
+                            <a href="staffoid/Marrrtz.html"><img src="img/[OID]Marrrtz.png"></a>
+                        </div>
+                        <figcaption>Dono Regras [OID]Marrrtz</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="itemstaff">
+                            <a href="staffoid/Tim_Maia.html"><img src="img/[OID]TIM_MAIA.png"></a>
+                        </div>
+                        <figcaption>Recrutador [OID]TIM_MAIA</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="itemstaff">
+                            <a href="staffoid/YnxG_.html"><img src="img/[OID]YxnG_..png"></a>
+                        </div>
+                        <figcaption>Recrutador [OID]YxnG_.</figcaption>
+                    </figure>
+                </div>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2 id="Historia">HISTÓRIA</h2>
+            <div class="textHist">
+                    <p>O Clã Os Indomáveis nasceu em 23/02/2025, fruto da parceria entre três jogadores determinados: Marrrtz, Kaka e Nxthxn308. No entanto, a jornada que nos trouxe até aqui começou bem antes dessa data.<br>
+                    <br>
+                    O Trio Os Indomáveis surgiu durante um evento no servidor Siga Bem Caminhoneiro (SBC), onde os participantes precisavam formar trios e acumular o maior número de /t em uma semana. A equipe vencedora garantiria 30 dias de SócioM, e foi exatamente o que fizemos. Mas a verdadeira vitória não foi apenas no evento – foi na amizade que construímos.<br>
+                    <br>
+                    Na época, éramos membros do clã The New Empire, mas, conforme os dias passaram, percebemos que precisávamos de um espaço onde pudéssemos compartilhar nossos conhecimentos e evoluir juntos, sem julgamentos externos. Assim, nos aproximamos ainda mais e começamos a traçar um novo caminho.<br>
+                    <br>
+                    A virada decisiva aconteceu pouco antes da eleição presidencial do SBC, em 23/02/2025. Nxthxn308 lançou sua candidatura com Kaka como vice pelo Partido União dos Jogadores Livres (UJL), lutando por mudanças no servidor. A derrota nas urnas foi um golpe, mas não um fim. Pelo contrário, foi o empurrão que faltava para darmos início à nossa própria revolução. Se não podíamos mudar o cenário, criaríamos o nosso próprio. Assim nasceu a OID.<br>
+                    <br>
+                    Hoje, Os Indomáveis são mais do que um clã – somos uma irmandade. Aqui, prezamos por justiça, união e respeito, sempre ajudando nossos membros e fortalecendo nossos laços.<br>
+                    <br>
+                    Não tememos desafios. Não recuamos diante do perigo. Nossa força está na união, nossa marca é a resistência. Se nos enfrentam, sentem o peso da nossa fúria.<br>
+                    <br>
+                    🔥 Somos OID. Somos imparáveis! 🔥</p>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="Anuncios">NOVOS ANUNCIOS</h2>
+            <div class="anuncios-container">
+                <div class="anuncio destaque">
+                    <h3>Site do clã OID</h3>
+                    <p>Site criado para ajudar o clã. Nosso site já está no ar, trazendo tudo o que você precisa saber sobre o clã, tudo em um só lugar!<br>
+                    08/03/2025.</p>
+                    <a href="anuncios/Site.html" class="btn">Ver Anúncio</a>
+                </div>
+                <div class="anuncio">
+                    <h3>Clã Independente</h3>
+                    <p>Se algum membro de outro clã tentar convidar ou abordar os membros do nosso clã, exigimos que nos avise imediatamente.<br>
+                    02/03/2025.</p>
+                    <a href="anuncios/Independente.html" class="btn">Ver Anúncio</a>
+                </div>
+                <div class="anuncio">
+                    <h3>VIPC</h3>
+                    <p>Todos os membros terão acesso ao VIP, tornando a experiência ainda mais divertida e cheia de vantagens.<br>28/02/2025.</p>
+                    <a href="anuncios/vipc.html" class="btn">Ver Anúncio</a>
+                </div>
+            </div>
+            <a href="todosanuncios.html"><button class="buttonTodosA">Veja todos os anúncios</button></a>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2 id="Links">LINKS</h2>
+            <div class="formularios-container">
+                <div class="formulario">
+                    <h3>Recrutador</h3>
+                    <p>Quer se tornar um recrutador do clã? Preencha o formulário!</p>
+                    <a href="https://forms.gle/9jAWe9KvEPFej3nL8" class="btn2">Acessar Formulário</a>
+                    <img class="form" src="img/Formulario1.png">
+                </div>
+                <div class="formulario">
+                    <h3>Moderador</h3>
+                    <p>Tem interesse em ajudar na moderação? Candidate-se agora!</p>
+                    <a href="https://forms.gle/BrwzBv3FG9DCG8Mt7" class="btn2">Acessar Formulário</a>
+                    <img class="form" src="img/Formulario2.png">
+                </div>
+                <div class="formulario">
+                    <iframe src="https://discord.com/widget?id=1334334577598136342&theme=dark" width="100%" height="550" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+                <div class="formulario">
+                    <h3>Painel do Clã</h3>
+                    <p>Clique no botão abaixo para visualizar o Painel Oficial do Clã Os Indomáveis 100% atualizado</p>
+                    <a href="https://painel.sbcsamp.com/clans/566" class="btn2">Acessar Painel do Clã</a>
+                </div>
+                <div class="formulario">
+                    <h3>Regras SBC</h3>
+                    <p>Leia atentamente todas as regras do servidor para não dar problema para o clã.</p>
+                    <a href="https://painel.sbcsamp.com/clans/566" class="btn2">Acessar Regras SBC</a>
+                </div>
+                <div class="formulario">
+                    <h3>Regras Clã</h3>
+                    <p>Leia atentamente todas as regras de clã para não dar problema para o clã.</p>
+                    <a href="https://www.sbcsamp.com/forum/topic/3701-regras-cl%C3%A3/?tab=comments#comment-12019" class="btn2">Acessar Regras Clã</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Os Indomáveis - OID</p>
+    </footer>
+</body>
+<!--Criado por Marcos Paulo, vulgo Marrrtz-->
+</html>

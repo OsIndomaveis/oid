@@ -1,0 +1,278 @@
+body{
+    background: linear-gradient(50deg, #229955, #696969);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: -8px;
+    padding: 15px 5px 10px 5px;
+    border-radius: 0 0 10px 10px;
+}
+nav a{
+    background-color: rgba(248, 249, 242, 0.2);
+    padding: 2px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+hr{
+    margin: 0 -8px 0 -8px;
+}
+
+/* Seção 1 */
+
+.logoInicio{
+    width: 50%;
+}
+h1{
+    font-size: 70px;
+}
+.OsIndomaveis{
+    background-color: #8F9A80;
+    padding: 0 10px 5px 10px;
+    border-radius: 5px;
+}
+p{
+    font-size: larger;
+}
+
+.conteiner{
+    background-color: #1b1a1d;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    margin: 50px 0 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.item{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+.item img{
+    width: 400px;
+    padding: 5px;
+    border: solid white 2px;
+}
+
+/* Seção 2 */
+#Staff{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.contstaff{
+    background-color: rgba(27, 26, 29, 0.5);
+    border-radius: 50px;
+    padding: 10px 0 10px 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+.itemstaff{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+.itemstaff img{
+    width: 700px;
+    border: solid white 1px;
+    box-shadow: 0px 8px 14px rgba(249, 249, 249, 1);
+}
+.itemstaff img:hover{
+    width: 720px;
+    border: solid white 1px;
+}
+
+/* Seção 3 */
+#Historia{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.textHist{
+    background-color: #889988;
+    margin: 0 -8px 0 -8px;
+
+}
+.textHist p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 20px 10px 20px;
+    text-align: justify;
+}
+
+
+/* Seção 4 */
+
+#Anuncios{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.anuncios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.anuncio {
+    display: inline-block;
+    background-color: #2C3E3E;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.anuncio.destaque {
+    flex: 2;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #B0B0B0;
+    color: #2C3E3E;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8F8F8F;
+}
+
+.buttonTodosA{
+    background-color: #B0B0B0;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 1s;
+}
+.buttonTodosA a{
+    color: black;
+    text-decoration: none;
+}
+
+.buttonTodosA:hover{
+    background-color: #8F8F8F;
+    border-radius: 10px;
+    width: 75%;
+    height: 51px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition-duration: 1.5s;
+}
+
+/* Seção 5 */
+
+#Links{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.formularios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+    align-items: stretch;
+}
+
+.formulario {
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    vertical-align: top;
+}
+.formulario img{
+    width: 90%;
+    height: 60%;
+    padding: 20px;
+}
+.form{
+    border-radius: 30px;
+}
+
+.btn2 {
+    display: inline-block;
+    background-color: #B0B0B0;
+    color: #2C3E3E;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.btn2:hover {
+    background-color: #8F8F8F;
+}
+
+
+.Voltar{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: #696969;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.Voltar img{
+    width: 20px;
+    height: 20px;
+}
+
+footer p{
+    font-size: 20px;
+    padding: 50px 0 20px 0;
+}
+
+@media (max-width: 884px){
+    .itemstaff img{
+        width: 90%;
+    }
+}
+@media (max-width: 542px) {
+    .item img{
+        width: 80%;
+        border: solid white 2px;
+    }
+}
+@media (max-width: 410px) {
+    nav{
+        padding: 15px 5px 10px 5px;
+    }
+    nav a{
+        margin: 5px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 434px) {
+    #Cla{
+        font-size: 40px;
+    }
+    .buttonTodosA{
+        font-size: 100%;
+    }
+}
