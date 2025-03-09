@@ -253,7 +253,7 @@ footer p{
         width: 90%;
     }
     .itemstaff img:hover{
-        width: 95%;
+        width: 30%;
     }
 }
 @media (max-width: 542px) {
