@@ -259,9 +259,9 @@ footer p{
         border: solid white 2px;
     }
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
     nav{
-        padding: 15px 5px 10px 5px;
+        padding: 15px 3px 10px 3px;
     }
     nav a{
         margin: 5px;
